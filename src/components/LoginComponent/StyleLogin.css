@@ -1,0 +1,93 @@
+.login-container {
+  color: #555;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 60rem;
+  margin: 0 auto 8rem;
+  font-size: 1rem; }
+  .login-container .login-child {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .login-container .login-child h5 {
+      font-size: 0.95em;
+      text-transform: uppercase; }
+    .login-container .login-child .button3-container {
+      border: 1px solid #c40d2e;
+      color: white;
+      background-color: #c40d2e;
+      width: 100%;
+      z-index: 994;
+      transition: 0.3s;
+      font-weight: 500;
+      cursor: pointer; }
+    .login-container .login-child .button3-container:hover {
+      color: #555; }
+    .login-container .login-child p {
+      margin-top: 1.5em;
+      line-height: 1.5;
+      text-align: left; }
+  .login-container .login-part .mention {
+    font-size: 0.8em;
+    text-align: right; }
+  .login-container .login-part .input-wrapper-cuabomay {
+    background: white;
+    width: 100%;
+    position: relative;
+    font-size: 1rem;
+    display: flex;
+    margin-bottom: 1.5em; }
+    .login-container .login-part .input-wrapper-cuabomay .eye-icon {
+      z-index: 100;
+      cursor: pointer;
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.2s;
+      color: #c5c3c3; }
+    .login-container .login-part .input-wrapper-cuabomay .eye-icon:active {
+      font-size: 0.8em;
+      color: #c40d2e; }
+    .login-container .login-part .input-wrapper-cuabomay .input-holder-text {
+      z-index: 1;
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1em;
+      transition: 0.3s; }
+    .login-container .login-part .input-wrapper-cuabomay .input-cuabomay {
+      position: relative;
+      line-height: 1.5;
+      font-size: 1rem;
+      z-index: 2;
+      outline: none;
+      width: 100%;
+      padding: 0.8rem 0.4rem 0.8rem 0.4rem;
+      border: 1px solid #e2e2e2;
+      background: none; }
+    .login-container .login-part .input-wrapper-cuabomay .input-password {
+      font-size: 2em;
+      height: 50px; }
+  .login-container .login-part .input-wrapper-cuabomay .input-cuabomay:focus + .input-holder-text,
+  .login-container .login-part .input-wrapper-cuabomay .input-cuabomay:valid + .input-holder-text {
+    font-size: 0.8em;
+    top: -15%;
+    left: 0; }
+  .login-container .login-part .button2-container {
+    margin-bottom: 1.5em;
+    font-size: 0.8em; }
+
+@media only screen and (max-width: 680px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .login-container .login-child {
+      width: 100%; }
+    .login-container .login-part {
+      margin-bottom: 3em; } }

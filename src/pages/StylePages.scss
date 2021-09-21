@@ -1,0 +1,63 @@
+.page-body-container {
+    background-color: white;
+    padding-top: 2em;
+    .all-product-container {
+        display: flex;
+        z-index: 10;
+    }
+}
+.login-page-body-container {
+    h1 {
+        margin: 1em 0 0;
+        text-align: center;
+        color: #c40d2e;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    p {
+        text-align: center;
+        margin: 1em 0 3em;
+    }
+}
+.admin-page {
+    background-color: #f2f2f2;
+    display: flex;
+    .admin-page-body {
+        width: 100%;
+        .board-container {
+            padding: 0 2rem;
+            position: relative;
+            .board-tag{
+                position: absolute;
+                font-size: 1.5em;
+                color: white;
+                left: 3rem;
+                top: -1rem;
+                width: 4rem;
+                height: 4rem;
+                background-color: #d32d4c;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                box-shadow: 0 0 10px 3px #e2e2e2;
+                filter: contrast(1);
+            }
+        }
+    }
+    .filter-div{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0;
+        z-index: -5;
+        transition-delay: 0.2s;
+    }
+    .filter-div.active{
+        transition-delay: 0s;
+        z-index: 5;
+        opacity: 0.5;
+    }
+}
+

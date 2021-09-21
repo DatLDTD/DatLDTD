@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+.carousel-container {
+    height: auto;
+    .carousel-wrapper:active {
+        cursor: grabbing;
+    }
+    .carousel-wrapper {
+        height: 42vw;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        cursor: default;
+        .button-control-carousel-container {
+            position: absolute;
+            height: 12px;
+            width: 100px;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50px);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .button-auto-navigate-value {
+                cursor: pointer;
+                transition: 0.3s;
+                .auto-true {
+                    display: none;
+                }
+                .auto-false {
+                    transform: rotate(90deg);
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-bottom: 11px solid white;
+                }
+            }
+            .button-auto-navigate-value.active {
+                .auto-true {
+                    display: block;
+                    background: none;
+                    display: flex;
+                    .fakeDiv {
+                        margin: 0 1px 0 1px;
+                        height: 12px;
+                        width: 4px;
+                        background-color: white;
+                    }
+                }
+                .auto-false {
+                    display: none;
+                }
+            }
+            .button-navigate {
+                transition: 0.3s;
+                cursor: pointer;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background-color: white;
+            }
+            .button-navigate.active {
+                width: 12px;
+                height: 12px;
+                background: none;
+                border: 2px solid #c40d2e;
+            }
+        }
+        .slider-1 {
+            background-image: url("../../img/carousel/carousel-img-1.1.jpg");
+        }.slider-2 {
+            background-image: url("../../img/carousel/carousel-img-2.1.jpg");
+        }
+        .slider-3 {
+            background-image: url("../../img/carousel/carousel-img-3.1.jpg"); 
+        }
+        .carousel-cuabomay-item {
+            opacity: 0;
+            z-index: -1;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 120% ;
+            height: 100%;
+            width: 100%;
+            transition: 1.3s;
+            a {
+                text-decoration: none;
+            }
+            .title-button-container {
+                right: 15%;
+                top: 50%;
+                transform: scale(0.8) translateY(-50%);
+                min-width: 230px;
+                transition: 0.7s;
+                transition-delay: 0s;
+                opacity: 0;
+                position: absolute; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 1rem;
+                span:nth-child(1) {
+                    font-size: 3em;
+                    font-family: "Charmonman", cursive;
+                    font-style: italic;
+                }
+                span:nth-child(2) {
+                    font-size: 3.5em;
+                    letter-spacing: 0.2em;
+                }
+                span:nth-child(3) {
+                    margin-bottom: 2.5em;
+                    letter-spacing: 0.3em;
+                }
+                .button3-container {
+                    font-weight: 600;
+                    width: 350px;
+                    color: white;
+                    border: 2px solid white;
+                    transition: 0.3s;
+                }
+                .button3-container:hover {
+                    color: #555;
+                }
+            }
+        }
+        .carousel-cuabomay-item.active {
+            opacity: 1;
+            z-index: 0;
+            background-size: 100% ;
+            .title-button-container {
+                transition-delay: 0.3s;
+                transform: scale(1) translateY(-50%);
+                opacity: 1;
+            }
+        }
+        .slider-2 {
+            .title-button-container {
+                font-size: 1rem;
+                img {
+                    height: 350px;
+                    object-fit: cover;
+                }
+                span:nth-child(2) {
+                    font-size: 2.5em;
+                    font-family: "Charmonman", cursive;
+                    font-style: italic;
+                    margin: 0;
+                }
+                span:nth-child(3) {
+                    font-size: 2.5em;
+                    letter-spacing: 0.3em;
+                    margin: 0;
+                }
+                span:nth-child(4) {
+                    margin-bottom: 1em;
+                    letter-spacing: 0.3em;
+                }
+            }
+        }
+        .slider-3 {
+            font-size: 1rem;
+            .title-button-container {
+                span:nth-child(1) {
+                    font-size: 2.5em;
+                    color: #c40d2e;
+                    font-family: "Charmonman", cursive;
+                    font-style: italic;
+                }
+                span:nth-child(2) {
+                    font-size: 3.5em;
+                    color: #c40d2e;
+                }
+                span:nth-child(3) {
+                    margin-bottom: 2em;
+                    color: #555;
+                    letter-spacing: 0.3em;
+                }
+                .button3-container {
+                    font-weight: 600;
+                    width: 350px;
+                    color: #555;
+                    border: 1px solid #555;
+                }
+                .button3-container:hover {
+                    color: white;
+                    border: 1px solid #c40d2e;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1450px) {
+    .carousel-container {
+        .carousel-wrapper {
+            .carousel-cuabomay-item {
+                .title-button-container {
+                    font-size: 0.9rem;
+                    .button3-container{
+                        font-size: 1.1em;
+                    }
+                }  
+            }
+            .slider-2 {            
+                .title-button-container {
+                    img{
+                        height: 310px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .carousel-container {
+        .carousel-wrapper {
+            .carousel-cuabomay-item {
+                .title-button-container {
+                    right: 10%;
+                    font-size: 0.7rem;
+                    .button3-container{
+                        font-size: 1.3em;
+                        width: 300px;
+                    }
+                }
+            }
+            .slider-2 {            
+                .title-button-container {
+                    img{
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .carousel-container {
+        .carousel-wrapper {
+            .carousel-cuabomay-item {
+                .title-button-container {
+                    font-size: 0.6rem;
+                    .button3-container{
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .slider-2 {            
+                .title-button-container {
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .carousel-container {
+        .carousel-wrapper {
+            height: 128vw;
+            .button-control-carousel-container {
+                bottom: 5px;
+            }
+            .carousel-cuabomay-item {
+                .title-button-container {
+                    left: 50%;
+                    top:60%;
+                    transform:scale(0.8) translateX(-50);
+                    font-size: 0.5rem;
+                    .button3-container{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            .carousel-cuabomay-item.active {
+                .title-button-container {
+                    transform: scale(1) translateX(-50%);       
+                }
+            }
+            .slider-1 {
+                background-image: url("../../img/carousel/carousel-img-1.2.jpg");
+            }
+            .slider-2 {
+                background-image: url("../../img/carousel/carousel-img-2.2.jpg");
+            }
+            .slider-3 {
+                background-image: url("../../img/carousel/carousel-img-3.2.jpg"); 
+            }
+        }
+    }
+}
+@media only screen and (max-width: 530px) {
+    .carousel-container {
+        .carousel-wrapper {
+            .carousel-cuabomay-item {
+                .title-button-container {
+                    top:58%;
+                    font-size: 0.4rem;
+                    .button3-container{
+                        font-size: 1.5em;
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .carousel-container {
+        .carousel-wrapper {
+            .carousel-cuabomay-item {
+                .title-button-container {
+                    top: 58%
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+    .carousel-container {
+        .carousel-wrapper {
+            .carousel-cuabomay-item {
+                .title-button-container {
+                    font-size: 0.5rem;
+                    .button3-container{
+                        font-size: 1.3em;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 315px) {
+    .carousel-container {
+        .carousel-wrapper {
+            .carousel-cuabomay-item.active {
+                .title-button-container {
+                    top:60%;
+                    font-size: 0.3rem;
+                    .button3-container{
+                        font-size: 1.4em;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,13 @@
+.list-product-container{
+    margin: 3rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+    .product-wrapper{
+        margin: 0 1rem 0 1rem;
+    }
+    .paginate-container{
+        width: 100%;
+        margin: 3em 0;
+    }
+}

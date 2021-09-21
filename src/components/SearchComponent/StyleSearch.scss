@@ -1,0 +1,98 @@
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    .search-wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: 620px;
+        justify-content: center;
+        overflow: hidden;
+        .search-icon {
+            color: #555;
+            position: absolute;
+            bottom: 25%;
+            right: 2px;
+            font-size: 1.5rem;
+            z-index: 15;
+            width: 2.5rem;
+            height: 2.5rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: white;
+            .icon-search {
+                transform: rotate(90deg);
+            }
+        }
+        .hello-mother-fucker {
+            .holder-text {
+                color: #555;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 1rem;
+                font-size: 1.5rem;
+                background: none;
+                z-index: 9;
+                transition: 0.4s;
+            }
+            .search-fake-boder-bottom {
+                width: 100%;
+                height: 3px;
+                left: 0px;
+                bottom: 1rem;
+                position: absolute;
+                background-color: #c40d2e;
+                transform: translateX(-100%);
+                transition: 0.3s;
+                z-index: 10;
+            }
+        }
+        .search-icon:hover {
+            cursor: pointer;
+            color: #c40d2e;
+            box-shadow: 1px 1px 2px #55555575, inset 1px 1px 2px #f2f2f2;
+            background-color: white;
+        }
+        .search-icon:active {
+            box-shadow: inset 1px 1px 2px #55555575, 1px 1px 2px #f2f2f2;
+        }
+        .search-input {
+            width: 100%;
+            font-size: 1.5rem;
+            border: none;
+            border-bottom: 2px solid #868383;
+            padding: 0.2rem 3rem 0.2rem 0.2rem;
+            margin: 2rem 0 1rem 0;
+            outline: none;
+            background: none;
+            z-index: 10;
+            transition: 0.3s;
+            transform-origin: left;
+        }
+    }
+}
+
+.search-container {
+    .search-wrapper .search-input:focus + .hello-mother-fucker,
+    .search-wrapper .search-input:valid + .hello-mother-fucker {
+        .holder-text {
+            color: #c40d2e;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transform: translateY(-150%);
+            z-index: 2;
+            transition: 0.3s;
+            max-width: calc(5ch - 2px);
+            overflow: hidden;
+        }
+        .search-fake-boder-bottom {
+            transform: translateX(0);
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.adm-product-card-container {
+  border: 1px solid white;
+  height: 4rem;
+  display: flex;
+  cursor: pointer;
+  padding: 0 2rem 0 2rem; }
+  .adm-product-card-container > * {
+    border-top: 2px solid #f2f2f2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  .adm-product-card-container .id-wrapper {
+    overflow: hidden; }
+  .adm-product-card-container .image-wrapper {
+    overflow: hidden; }
+    .adm-product-card-container .image-wrapper img {
+      margin-bottom: 1px;
+      width: 25%;
+      object-fit: cover;
+      transition: 0.3s; }
+  .adm-product-card-container .name-wrapper span {
+    max-width: 25ch; }
+  .adm-product-card-container .action-wrapper .product-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    transition: 0.3s; }
+  .adm-product-card-container .action-wrapper .product-icon-wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px -1px #555;
+    filter: contrast(1.3); }
+  .adm-product-card-container .action-wrapper .product-icon-wrapper:active {
+    transform: scale(1);
+    box-shadow: 0 0 10px -1px #555;
+    filter: contrast(1.3); }
+  .adm-product-card-container .action-wrapper .icon-detail {
+    background-color: #f2f2f2;
+    color: #555;
+    border: 1px solid #f2f2f2; }
+  .adm-product-card-container .action-wrapper .icon-detail:hover {
+    background-color: white; }
+  .adm-product-card-container .action-wrapper .icon-update {
+    background-color: #05b6ce;
+    color: white; }
+  .adm-product-card-container .action-wrapper .icon-delete {
+    padding-left: 1px;
+    background-color: #c40d2e;
+    color: white; }
+
+.adm-product-card-container:hover {
+  color: #c40d2e; }
+  .adm-product-card-container:hover > * {
+    background-color: rgba(242, 242, 242, 0.5); }
+  .adm-product-card-container:hover .image-wrapper img {
+    transform: scale(1.3); }
+  .adm-product-card-container:hover .action-wrapper .icon-detail {
+    background-color: white;
+    border: 1px solid #e2e2e2; }

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+
+.basket-lite-container {
+    font-size: 1rem;
+    padding: 1em 1.3em 3em;
+    .title {
+        text-align: center;
+        margin-bottom: 1em;
+        color: #c40d2e;
+        span:nth-child(1) {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.8em;
+        }
+    }
+    .notice {
+        text-align: center;
+    }
+    .list-item-container {
+        color: #555;
+        .card-item-container {
+            display: flex;
+            font-size: 1em;
+            position: relative;
+            .img-item-wrapper {
+                img {
+                    width: 160px;
+                    height: 220px;
+                    object-fit: cover;
+                }
+            }
+            .info-item-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-bottom: 1em;
+                > p {
+                    margin: 0;
+                }
+                .collection {
+                    font-family: "Charmonman", cursive;
+                    font-size: 1.2em;
+                    color: #c40d2e;
+                }
+                .sub-collection {
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                .name {
+                    max-width: 22ch;
+                }
+                .price {
+                    margin-top: 10px;
+                }
+            }
+            .btn-delete-item {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 5px;
+                right: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #e2e2e2;
+                font-size: 1.2em;
+            }
+            .btn-delete-item:hover {
+                color: #c40d2e;
+            }
+        }
+        .card-item-container:hover {
+            .info-item-wrapper {
+                .name {
+                    color: #c40d2e;
+                }
+            }
+        }
+        .fake-item-border {
+            height: 2px;
+            width: 90%;
+            margin: 10px auto;
+            background-color: #e2e2e2;
+        }
+    }
+    .sub-total-container {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 1em 0;
+        font-weight: 500;
+        color: #777777;
+        span:nth-child(1) {
+            text-transform: uppercase;
+            margin-right: 15px;
+        }
+    }
+    .button3-container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #c40d2e;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid #c40d2e;
+        margin-top: 3em;
+        text-decoration: none;
+    }
+    .button3-container:hover {
+        color: #c40d2e;
+    }
+}

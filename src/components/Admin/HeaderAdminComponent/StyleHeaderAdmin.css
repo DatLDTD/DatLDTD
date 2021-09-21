@@ -1,0 +1,35 @@
+.header-admin-container {
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 5px 10px #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0 3em 0 4em; }
+  .header-admin-container .left-side .board-name-wrapper {
+    font-size: 1.5em;
+    color: #555; }
+  .header-admin-container .right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #555; }
+    .header-admin-container .right-side .search-bar-wrapper {
+      margin-right: 0;
+      width: 400px;
+      transform: scale(0.8); }
+    .header-admin-container .right-side .header-icon-wrapper {
+      font-size: 1.2em;
+      margin: 0;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header-admin-container .right-side .header-icon-wrapper:nth-child(3) {
+      margin-left: 1.5em; }
+    .header-admin-container .right-side .header-icon-wrapper:hover {
+      background-color: #f2f2f2; }

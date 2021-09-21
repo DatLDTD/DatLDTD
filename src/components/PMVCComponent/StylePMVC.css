@@ -1,0 +1,40 @@
+.pm-vc-container {
+  height: 24vw;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: -10; }
+  .pm-vc-container .filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -2; }
+  .pm-vc-container .tittle-pmvc-wrapper {
+    background: none;
+    position: fixed;
+    z-index: -1;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200;
+    font-size: 3em; }
+
+.pmvc-finder {
+  background-image: url("../../img/pm-background/watch-finder.jpg"); }
+
+.pmvc-login {
+  background-image: url("../../img/pm-background/login.jpg");
+  background-position-y: 100px; }
+
+@media only screen and (max-width: 600px) {
+  .pmvc-login {
+    background-position-y: 60px; } }

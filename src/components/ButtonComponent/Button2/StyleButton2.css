@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box; }
+
+.button2-wrapper {
+  width: fit-content;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid #f2f2f2;
+  position: relative; }
+  .button2-wrapper .text-holder {
+    cursor: pointer;
+    word-spacing: 0.2rem;
+    color: #555;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.2rem; }
+  .button2-wrapper .fake-boder {
+    transition: 0.3s;
+    position: relative;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #c40d2e;
+    margin: auto; }
+
+.button2-wrapper:hover .text-holder {
+  color: #c40d2e; }
+
+.button2-wrapper:hover .fake-boder {
+  width: 100%; }

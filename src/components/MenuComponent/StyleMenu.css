@@ -1,0 +1,98 @@
+.main-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 3rem 0 0 0;
+  width: 100%; }
+  .main-menu-wrapper .menu-item-level0 {
+    text-transform: uppercase;
+    list-style-type: none;
+    position: relative;
+    padding: 0.7rem 0 0.7rem 4rem;
+    transition: 0.3s; }
+    .main-menu-wrapper .menu-item-level0 .menu-icon {
+      margin-right: 1rem;
+      color: #e2e2e2; }
+    .main-menu-wrapper .menu-item-level0 .text-wrapper {
+      color: #555;
+      cursor: pointer;
+      text-transform: uppercase;
+      padding: 0.2rem 1rem 0.2rem 0;
+      margin-right: 4rem;
+      position: relative; }
+      .main-menu-wrapper .menu-item-level0 .text-wrapper .icon-chev {
+        position: absolute;
+        right: 0;
+        top: 25%;
+        transition: 0.3s; }
+    .main-menu-wrapper .menu-item-level0 .text-wrapper:hover {
+      color: #c40d2e; }
+      .main-menu-wrapper .menu-item-level0 .text-wrapper:hover .menu-icon {
+        color: #c40d2e; }
+    .main-menu-wrapper .menu-item-level0 a {
+      text-decoration: none;
+      color: #555;
+      position: relative; }
+    .main-menu-wrapper .menu-item-level0 a:hover {
+      color: #c40d2e; }
+      .main-menu-wrapper .menu-item-level0 a:hover .menu-icon {
+        color: #c40d2e; }
+    .main-menu-wrapper .menu-item-level0 .fake-border {
+      height: 1px;
+      background-color: #e5e5e5; }
+    .main-menu-wrapper .menu-item-level0 .has-level1 {
+      text-transform: uppercase;
+      color: #555;
+      padding: 0 6rem 0 0;
+      position: relative;
+      transition: 0.3s;
+      overflow: hidden; }
+      .main-menu-wrapper .menu-item-level0 .has-level1 span {
+        cursor: pointer; }
+      .main-menu-wrapper .menu-item-level0 .has-level1 .menu-level1-container {
+        position: relative;
+        left: 2rem;
+        transition: 0.3s;
+        height: auto; }
+        .main-menu-wrapper .menu-item-level0 .has-level1 .menu-level1-container .menu-level1-wrapper {
+          height: 0;
+          transition: 0.3s; }
+          .main-menu-wrapper .menu-item-level0 .has-level1 .menu-level1-container .menu-level1-wrapper .menu-item-level1 {
+            list-style: none; }
+    .main-menu-wrapper .menu-item-level0 .has-level1:hover {
+      color: #c40d2e; }
+  .main-menu-wrapper .menu-item-level0.active {
+    transform: translateZ(0); }
+    .main-menu-wrapper .menu-item-level0.active .menu-icon {
+      color: #c40d2e; }
+    .main-menu-wrapper .menu-item-level0.active .text-wrapper {
+      color: #c40d2e; }
+      .main-menu-wrapper .menu-item-level0.active .text-wrapper .icon-chev {
+        transform: rotate(90deg); }
+    .main-menu-wrapper .menu-item-level0.active .has-level1 {
+      color: #c40d2e;
+      transform: translateZ(0); }
+      .main-menu-wrapper .menu-item-level0.active .has-level1 .menu-level1-container {
+        position: relative;
+        left: 2rem;
+        margin: 1.5rem 0 0.75rem 0; }
+        .main-menu-wrapper .menu-item-level0.active .has-level1 .menu-level1-container .menu-level1-wrapper {
+          height: auto;
+          transform: translateZ(0);
+          padding: 0; }
+          .main-menu-wrapper .menu-item-level0.active .has-level1 .menu-level1-container .menu-level1-wrapper .menu-item-level1 {
+            list-style-type: none;
+            padding: 0.5rem 0;
+            text-transform: none; }
+            .main-menu-wrapper .menu-item-level0.active .has-level1 .menu-level1-container .menu-level1-wrapper .menu-item-level1 .button1-container {
+              border: none;
+              color: #555;
+              background: #f2f2f2;
+              width: 100%;
+              z-index: 994;
+              transition: 0.3s;
+              font-weight: 400; }
+            .main-menu-wrapper .menu-item-level0.active .has-level1 .menu-level1-container .menu-level1-wrapper .menu-item-level1 .button1-container:hover {
+              color: white; }
+  .main-menu-wrapper .menu-item-level0.fake-border-wrapper {
+    margin-right: 4rem; }

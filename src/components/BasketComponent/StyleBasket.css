@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+.basket-page-container {
+  font-size: 1.05rem; }
+  .basket-page-container > .title {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #c40d2e;
+    margin: 3em 0; }
+    .basket-page-container > .title span:nth-child(1) {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 2.5em; }
+  .basket-page-container .basket-page-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; }
+    .basket-page-container .basket-page-wrapper > .list-item-container {
+      width: 45vw;
+      border: 1px solid #e2e2e2; }
+      .basket-page-container .basket-page-wrapper > .list-item-container > div:nth-child(1) {
+        width: 100%;
+        height: 60px;
+        background-color: #f2f2f2;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        padding: 0 2em; }
+      .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container {
+        display: flex;
+        font-size: 1em;
+        position: relative; }
+        .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container .img-item-wrapper img {
+          width: 180px;
+          height: 250px;
+          object-fit: cover; }
+        .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container .info-item-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          margin-left: 2em;
+          padding-bottom: 1em; }
+          .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container .info-item-wrapper > p {
+            margin: 0; }
+          .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container .info-item-wrapper .collection {
+            font-family: "Charmonman", cursive;
+            font-size: 1.4em;
+            color: #c40d2e; }
+          .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container .info-item-wrapper .sub-collection {
+            font-weight: 500;
+            text-transform: uppercase; }
+          .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container .info-item-wrapper .price {
+            margin-top: 10px; }
+        .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container .btn-delete-item {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 1.5em;
+          right: 1.3em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #e2e2e2;
+          font-size: 1.2em; }
+        .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container .btn-delete-item:hover {
+          color: #c40d2e; }
+      .basket-page-container .basket-page-wrapper > .list-item-container .card-item-container:hover .info-item-wrapper .name {
+        color: #c40d2e; }
+      .basket-page-container .basket-page-wrapper > .list-item-container .fake-item-border {
+        height: 2px;
+        width: 100%;
+        background-color: #e2e2e2; }
+    .basket-page-container .basket-page-wrapper .order {
+      margin-left: 3em; }
+      .basket-page-container .basket-page-wrapper .order .order-summary {
+        width: 30vw;
+        border: 1px solid #e2e2e2; }
+        .basket-page-container .basket-page-wrapper .order .order-summary span {
+          text-transform: uppercase; }
+        .basket-page-container .basket-page-wrapper .order .order-summary > div:nth-child(1) {
+          width: 100%;
+          height: 60px;
+          background-color: #f2f2f2;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          padding: 0 2em; }
+        .basket-page-container .basket-page-wrapper .order .order-summary div {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1em;
+          padding: 0 2em;
+          font-weight: 400; }
+        .basket-page-container .basket-page-wrapper .order .order-summary div:last-child {
+          font-weight: 500;
+          margin: 2em 0;
+          font-size: 1.05em; }
+      .basket-page-container .basket-page-wrapper .order .check-out {
+        width: 30vw;
+        border: 1px solid #e2e2e2;
+        border-top: none;
+        padding: 3em 3em; }
+        .basket-page-container .basket-page-wrapper .order .check-out .button3-container {
+          background-color: #c40d2e;
+          color: white;
+          font-weight: 500;
+          border: 1px solid #c40d2e;
+          cursor: pointer; }
+        .basket-page-container .basket-page-wrapper .order .check-out .button3-container:hover {
+          color: #c40d2e; }
+      .basket-page-container .basket-page-wrapper .order .policy {
+        width: 30vw;
+        margin-top: 3em;
+        border: 1px solid #e2e2e2;
+        padding: 2em 3em;
+        background-color: #f2f2f2; }
+        .basket-page-container .basket-page-wrapper .order .policy > div:first-child {
+          color: #c40d2e;
+          text-transform: uppercase;
+          margin-bottom: 1em; }
+        .basket-page-container .basket-page-wrapper .order .policy .vl {
+          display: flex;
+          justify-content: flex-start;
+          font-size: 2em; }
+          .basket-page-container .basket-page-wrapper .order .policy .vl > * {
+            margin-right: 0.5em; }
+          .basket-page-container .basket-page-wrapper .order .policy .vl > *:hover {
+            color: #c40d2e; }
+        .basket-page-container .basket-page-wrapper .order .policy .dm {
+          display: flex;
+          flex-direction: column;
+          font-size: 0.9em; }
+          .basket-page-container .basket-page-wrapper .order .policy .dm > * {
+            margin-bottom: 0.3em;
+            cursor: pointer; }
+          .basket-page-container .basket-page-wrapper .order .policy .dm > *:hover {
+            color: #c40d2e; }
+          .basket-page-container .basket-page-wrapper .order .policy .dm span {
+            text-transform: uppercase;
+            margin-left: 0.3em; }
+      .basket-page-container .basket-page-wrapper .order .policy:last-child {
+        margin: 0;
+        border-top: 0; }

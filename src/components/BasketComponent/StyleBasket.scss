@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+
+.basket-page-container {
+    font-size: 1.05rem;
+    // word-spacing: 3px;
+    > .title {
+        text-align: center;
+        margin-bottom: 1em;
+        color: #c40d2e;
+        margin: 3em 0;
+        span:nth-child(1) {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 2.5em;
+        }
+    }
+    .basket-page-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        > .list-item-container {
+            width: 45vw;
+            border: 1px solid #e2e2e2;
+            > div:nth-child(1) {
+                width: 100%;
+                height: 60px;
+                background-color: #f2f2f2;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                padding: 0 2em;
+            }
+            .card-item-container {
+                display: flex;
+                font-size: 1em;
+                position: relative;
+                .img-item-wrapper {
+                    img {
+                        width: 180px;
+                        height: 250px;
+                        object-fit: cover;
+                    }
+                }
+                .info-item-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    margin-left: 2em;
+                    padding-bottom: 1em;
+                    > p {
+                        margin: 0;
+                    }
+                    .collection {
+                        font-family: "Charmonman", cursive;
+                        font-size: 1.4em;
+                        color: #c40d2e;
+                    }
+                    .sub-collection {
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                    .price {
+                        margin-top: 10px;
+                    }
+                }
+                .btn-delete-item {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    top: 1.5em;
+                    right: 1.3em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #e2e2e2;
+                    font-size: 1.2em;
+                }
+                .btn-delete-item:hover {
+                    color: #c40d2e;
+                }
+            }
+            .card-item-container:hover {
+                .info-item-wrapper {
+                    .name {
+                        color: #c40d2e;
+                    }
+                }
+            }
+            .fake-item-border {
+                height: 2px;
+                width: 100%;
+                background-color: #e2e2e2;
+            }
+        }
+        .order {
+            margin-left: 3em;
+            .order-summary {
+                width: 30vw;
+                border: 1px solid #e2e2e2;
+                span {
+                    text-transform: uppercase;
+                }
+                > div:nth-child(1) {
+                    width: 100%;
+                    height: 60px;
+                    background-color: #f2f2f2;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 2em;
+                }
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1em;
+                    padding: 0 2em;
+                    font-weight: 400;
+                }
+                div:last-child {
+                    font-weight: 500;
+                    margin: 2em 0;
+                    font-size: 1.05em;
+                }
+            }
+            .check-out {
+                width: 30vw;
+                border: 1px solid #e2e2e2;
+                border-top: none;
+                padding: 3em 3em;
+                .button3-container {
+                    background-color: #c40d2e;
+                    color: white;
+                    font-weight: 500;
+                    border: 1px solid #c40d2e;
+                    cursor: pointer;
+                }
+                .button3-container:hover {
+                    color: #c40d2e;
+                }
+            }
+            .policy {
+                width: 30vw;
+                margin-top: 3em;
+                border: 1px solid #e2e2e2;
+                padding: 2em 3em;
+                background-color: #f2f2f2;
+                > div:first-child {
+                    color: #c40d2e;
+                    text-transform: uppercase;
+                    margin-bottom: 1em;
+                }
+                .vl {
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 2em;
+                    > * {
+                        margin-right: 0.5em;
+                    }
+                    > *:hover {
+                        color: #c40d2e;
+                    }
+                }
+                .dm {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 0.9em;
+                    > * {
+                        margin-bottom: 0.3em;
+                        cursor: pointer;
+                    }
+                    > *:hover {
+                        color: #c40d2e;
+                    }
+                    span {
+                        text-transform: uppercase;
+                        margin-left: 0.3em;
+                    }
+                }
+            }
+            .policy:last-child {
+                margin: 0;
+                border-top: 0;
+            }
+        }
+    }
+}
